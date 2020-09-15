@@ -1,8 +1,6 @@
 #include<stdio.h>
 
-int main(void) {
-  int i = 1;
-
+int main(int argc, char **argv) {
   printf("    .intel_syntax noprefix\n");
   printf("    .text\n");
   printf("    .globl  main\n");
@@ -11,7 +9,7 @@ int main(void) {
   printf("main:\n");
   printf("    push  rbp\n");
   printf("    mov   rbp, rsp\n");
-  printf("    mov   eax, %d\n", i);
+  printf("    mov   eax, %d\n", atoi(argv[1]));
   printf("    pop   rbp\n");
   printf("    ret\n");
   printf("    .size  main, .-main\n");
