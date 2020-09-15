@@ -5,7 +5,7 @@
 main:
     push  rbp
     mov   rbp, rsp
-    mov   eax, 1
+    mov   eax, 42
     pop   rbp
     ret
     .size  main, .-main
