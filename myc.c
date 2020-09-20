@@ -8,10 +8,9 @@ int main(int argc, char **argv) {
   printf("    .type main, @function\n");
 
   printf("main:\n");
-  printf("    push  rbp\n");
-  printf("    mov   rbp, rsp\n");
-  printf("    mov   eax, %d\n", atoi(argv[1]));
-  printf("    pop   rbp\n");
+  printf("    mov   rax, 5\n");
+  printf("    add   rax, 20\n");
+  printf("    sub   rax, 10\n");
   printf("    ret\n");
   printf("    .size  main, .-main\n");
   
